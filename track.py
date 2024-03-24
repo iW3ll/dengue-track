@@ -30,9 +30,10 @@ def refresh_data(event):
 
 root = tk.Tk()
 root.title("Dengue Track")
+root.iconbitmap("ico/dengue.ico")
 
 # city geocodes dictionary api has the numbers
-city_geocodes = {'Brasilia': '5300108', 'Camaçari': '2905701', 'Rio de janeiro': '3304557', 'São Paulo': '3550308'}
+city_geocodes = {'Brasilia - DF': '5300108', 'Camaçari - BA': '2905701', 'Rio de Janeiro - RJ': '3304557', 'São Paulo - SP': '3550308'}
 
 # create a label for city information only
 city_state_label = tk.Label(root, text="Cidade: ", font=("Helvetica", 12))
